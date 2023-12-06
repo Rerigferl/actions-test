@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: gomorroth/buildpackagelisting@7762a38a220207de49876522ca946d3e5806332c
+      - uses: gomorroth/buildpackagelisting@11be22bdfa3e1752a8e51679f0938ec0d0cb3311
       
