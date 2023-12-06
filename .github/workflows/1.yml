@@ -10,10 +10,13 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build
         env:
-          input: "asdwe"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           
         run: |
           wget https://github.com/Gomorroth/BuildPackageListing/releases/latest/download/BuildPackageListing
           chmod u+x BuildPackageListing
           ./BuildPackageListing
+
+      - run: |
+          ls -l
         
