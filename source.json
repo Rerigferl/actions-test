@@ -1,0 +1,22 @@
+{
+	"name": "gomoru.su",
+	"id": "gomoru.su",
+	"author": {
+		"name": "Gomorroth",
+		"url": "https://github.com/Gomorroth"
+	},
+	"infoLink": {
+		"url": "https://github.com/Gomorroth/vpm-repos",
+		"text": "View on GitHub"
+	},
+	"bannerUrl": "Website/banner.png",
+	"url": "https://gomorroth.github.io/vpm-repos/index.json",
+	"githubRepos": [
+		"Gomorroth/LightController",
+		"Gomorroth/CopyComponentUtilities",
+		"Gomorroth/MAExpressionGenerator",
+		"Gomorroth/ScreenCaptureUtilities",
+		"Gomorroth/Clothfire"
+	],
+	"packages": []
+}
