@@ -10,4 +10,5 @@ jobs:
       - uses: actions/checkout@v3
 
       - uses: gomorroth/buildpackagelisting@11be22bdfa3e1752a8e51679f0938ec0d0cb3311
-      
+        with: 
+          input: "test.json"
