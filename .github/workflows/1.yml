@@ -1,0 +1,13 @@
+name: "1"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: gomorroth/buildpackagelisting@7762a38a220207de49876522ca946d3e5806332c
+      
