@@ -19,23 +19,10 @@ jobs:
     permissions: write-all
     steps:
       - uses: actions/checkout@v3
-      - name: Build
-        uses: gomorroth/vpm-build-repository@6adf7ef565f96ca20365d4f0e7ac4d801d5c2a29
+      - name: vpm-build-repository
+        uses: Gomorroth/vpm-build-repository@v1
         with:
           repo-token: ${{ github.token }}
-
-      - name: Checkout Automation Repository
-        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
-        with:
-          repository: vrchat-community/package-list-action
-          path: ${{ env.pathToCi }}
-          clean: false
-
-      # Build Package Version Listing with Nuke
-      - name: Build Package Version Listing
-        run: ${{ env.pathToCi }}/build.cmd BuildRepoListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE --current-package-name "source.json"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: |
           ls -l
