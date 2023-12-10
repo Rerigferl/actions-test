@@ -34,4 +34,4 @@ jobs:
       - run: |
           ls -l
           cat vpm.json
-        
+          cat index.json
