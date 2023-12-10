@@ -16,6 +16,7 @@ jobs:
         uses: gomorroth/vpm-build-repository@0bfc63b3ad09ed09c241b82a3a1577dfa7cf8e58
         with:
           repo-token: ${{ github.token }}
+        permissions: write-all
 
       - run: |
           ls -l
