@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        uses: gomorroth/vpm-build-repository@2739a2f79ced8f46c6958110d8564fc518f751bd
+        uses: gomorroth/vpm-build-repository@68a779bf6a5ddc82c75348f72a3e1ac25db8e2c9
         with:
           repo-token: ${{ github.token }}
 
