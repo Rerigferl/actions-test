@@ -7,6 +7,12 @@ permissions:
   contents: write
   id-token: write
 
+
+env:
+  listPublishDirectory: Website
+  pathToCi: ci
+  
+
 jobs:
   job:
     runs-on: ubuntu-latest
@@ -27,7 +33,7 @@ jobs:
 
       # Build Package Version Listing with Nuke
       - name: Build Package Version Listing
-        run: ${{ env.pathToCi }}/build.cmd BuildRepoListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE/${{ env.listPublishDirectory }} --current-package-name ${{ vars.PACKAGE_NAME }}
+        run: ${{ env.pathToCi }}/build.cmd BuildRepoListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE --current-package-name "index.json"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
